@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export class Newsitem extends Component {
   render() {
-    let { title, discription, imageUrl, newsUrl, newsdate, author, source } =
+    let { title, description, imageUrl, newsUrl, newsdate, author, source } =
       this.props;
     return (
       <div className="my-3">
@@ -21,7 +21,7 @@ export class Newsitem extends Component {
           />
           <div className="card-body">
             <h5 className="card-title">{title}... </h5>
-            <p className="card-text">{discription}...</p>
+            <p className="card-text">{description}...</p>
             <p className="card-text">
               <small className="text-body-secondary">
                 By {!author ? "Unknown author" : author} on{" "}
